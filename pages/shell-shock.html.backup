@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shell Shock - STUDIO EINFÜHLUNG</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <style>
+        .project-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .project-text {
+            color: var(--dark-green);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .project-image {
+            margin: 2rem 0;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .float-right {
+            float: right;
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+            max-width: 45%;
+        }
+
+        .float-left {
+            float: left;
+            margin-right: 2rem;
+            margin-bottom: 1rem;
+            max-width: 45%;
+        }
+
+        .interview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .interview blockquote {
+            color: var(--dark-green);
+            font-style: italic;
+            margin: 1rem 0;
+            padding-left: 1rem;
+            border-left: 4px solid var(--orange);
+        }
+
+        .interview cite {
+            display: block;
+            color: var(--orange);
+            margin-top: 0.5rem;
+        }
+
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .character {
+            text-align: center;
+        }
+
+        .character-image {
+            margin-bottom: 1rem;
+        }
+
+        .character-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .character h3 {
+            color: var(--orange);
+            margin: 0.5rem 0;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .stills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .interview-player {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--dark-green);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .interview-player video {
+            width: 100%;
+            display: block;
+            border-radius: 4px;
+        }
+
+        .statement-image {
+            margin: 3rem -3rem;
+            position: relative;
+        }
+
+        .statement-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .inline-image {
+            width: 45%;
+            margin: 1rem;
+            float: right;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .inline-image.left {
+            float: left;
+        }
+
+        .large-image {
+            width: 100%;
+            margin: 3rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .statement-content {
+            overflow: hidden; /* Clear the floats */
+        }
+
+        .interview-section {
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+
+        .interview-section h2 {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .site-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .back-link {
+            margin-right: 3rem;
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .back-link:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .statement-image {
+                margin: 2rem 0;
+            }
+            .inline-image {
+                width: 100%;
+                float: none;
+                margin: 1rem 0;
+            }
+        }
+    </style>
+</head>
+<body class="project-detail">
+    <nav class="site-nav">
+        <a href="../index.html" class="nav-logo">STUDIO EINFÜHLUNG</a>
+        <a href="projects.html" class="back-link">← Back to Projects</a>
+    </nav>
+
+    <main class="project-content">
+        <header class="project-header">
+            <h1>Shell Shock</h1>
+            <p class="status">Currently in Pre-production</p>
+        </header>
+
+        <div class="quote">
+            "A darkly comedic tale of rivalry and ambition set in a world of competitive snail racing, where the line between human and gastropod becomes increasingly blurred."
+            <p class="quote-attribution">— Studio Einfühlung</p>
+        </div>
+
+        <div class="statement-image">
+            <img src="../images/projects/shell-shock/stills/shell-shock-5.png" alt="Scene from Shell Shock">
+        </div>
+
+        <section class="project-summary">
+            <img src="../images/projects/shell-shock/stills/shell-shock-1.png" alt="Scene from Shell Shock" class="inline-image">
+            
+            <p>Shell Shock follows the story of Grock, a once-celebrated snail racer whose career was cut short by a mysterious accident. Now living in self-imposed exile in a decaying mansion filled with terrariums, he obsessively breeds racing snails while plotting his comeback. His carefully maintained world is disrupted when his estranged sister Mira, a rising star in the sport, arrives seeking his help.</p>
+
+            <img src="../images/projects/shell-shock/stills/shell-shock-27.png" alt="Scene from Shell Shock" class="large-image">
+
+            <p>As their uneasy reunion unfolds, we discover that both siblings have undergone radical body modifications—a common practice in their world where humans alter themselves to better understand and bond with the creatures they admire. Grock's modifications have progressed to an unsettling degree, while Mira maintains a more socially acceptable balance between human and snail characteristics.</p>
+
+            <img src="../images/projects/shell-shock/stills/shell-shock-21.png" alt="Scene from Shell Shock" class="inline-image left">
+
+            <p>The story explores themes of obsession, sibling rivalry, and the blurred lines between dedication and madness. Set in a world where the sport of snail racing has evolved into a decadent spectacle, the film blends body horror with dark comedy, creating a unique atmosphere that is both unsettling and absurdly humorous.</p>
+
+            <img src="../images/projects/shell-shock/stills/shell-shock-12.png" alt="Scene from Shell Shock" class="inline-image">
+
+            <p>Through a series of flashbacks, we learn about the siblings' complicated past and the incident that led to Grock's withdrawal from the racing world. As Mira's true motives for seeking out her brother become clear, tensions escalate, leading to a climactic race that will determine both their fates.</p>
+
+            <img src="../images/projects/shell-shock/stills/shell-shock-8.png" alt="Scene from Shell Shock" class="inline-image left">
+
+            <p>The film's visual style draws inspiration from Victorian naturalist illustrations, body horror cinema, and the ornate aesthetics of baroque architecture. The mansion's interior, with its countless terrariums and overgrown gardens, creates a greenhouse-like atmosphere where the line between the natural and artificial world becomes increasingly indistinct.</p>
+
+            <img src="../images/projects/shell-shock/stills/shell-shock-16.png" alt="Scene from Shell Shock" class="inline-image">
+
+            <p>Shell Shock examines the lengths people will go to pursue their passions, the price of perfectionism, and the complex dynamics of family relationships. Through its surreal lens, the film poses questions about identity, transformation, and the sometimes razor-thin line between dedication and obsession.</p>
+        </section>
+
+        <section class="character-section">
+            <h2>Characters</h2>
+            <div class="character-grid">
+                <div class="character">
+                    <div class="character-image">
+                        <img src="../images/projects/shell-shock/characters/chet.png" alt="Chet Gapetti">
+                    </div>
+                    <h3>Chet Gapetti</h3>
+                    <p>A former competitive beard grower seeking redemption after a scandalous disqualification involving illegal beard enhancers.</p>
+                </div>
+
+                <div class="character">
+                    <div class="character-image">
+                        <img src="../images/projects/shell-shock/characters/claudine.png" alt="Claudine III">
+                    </div>
+                    <h3>Claudine III</h3>
+                    <p>An eccentric ice-skating instructor who claims to have taught a polar bear how to perform a triple axel.</p>
+                </div>
+
+                <div class="character">
+                    <div class="character-image">
+                        <img src="../images/projects/shell-shock/characters/boris.png" alt="Boris the Bear">
+                    </div>
+                    <h3>Boris the Bear</h3>
+                    <p>A surprisingly articulate polar bear with a passion for ice cream and a grudge against competitive beard growing.</p>
+                </div>
+
+                <div class="character">
+                    <div class="character-image">
+                        <img src="../images/projects/shell-shock/characters/martha.png" alt="Martha Gapetti">
+                    </div>
+                    <h3>Martha Gapetti</h3>
+                    <p>Chet's disapproving mother-in-law and amateur conspiracy theorist who believes beards are actually alien symbiotes.</p>
+                </div>
+            </div>
+        </section>
+
+        <img src="../images/projects/shell-shock/stills/shell-shock-25.png" alt="Scene from Shell Shock" class="large-image">
+
+        <section class="director-statement">
+            <h2>Director's Statement</h2>
+            
+            <div class="statement-content">
+                <p>With Shell Shock, I set out to explore the tension between ambition, identity, and the absurd in a world teetering between decaying traditions and theatrical spectacle. At its core, this is a story about fractured relationships, rivalries, and self-definition, all unfolding within a setting that is surreal and unsettlingly familiar.</p>
+
+                <p>The title, Shell Shock, carries multiple connotations. It nods to the dramatic and absurd egg battle that unfolds within the film, a central motif both literal and symbolic. Eggs, fragile yet enduring, serve as a metaphor for life, potential, and transformation. The title also hints at deeper emotional fractures, evoking the psychological toll of ambition and rivalry, particularly in the heightened world of sideshow circuits and televised competitions. The characters—many teetering between tragic and comical—find themselves navigating personal and existential crises against a backdrop of decayed grandeur and exaggerated spectacle.</p>
+
+                <p>The film's ensemble cast is as eclectic as its themes. At the center is Chet Gapetti, a washed-up sideshow strongman whose dreams of glory lie not in feats of strength but in winning a nationally televised beard competition. His former wife, Claudine, now partners with a polar bear—a literal replacement for Chet—embodying both the absurdity and heartbreak of his fall from grace. G-Rock, a flamboyant and scheming rival, fuels the chaos, while Mata ZuckerKlunk, the caustic mother-in-law, sharpens the interpersonal tensions with her biting commentary. Together, they inhabit a world that is as much about performance as it is about survival.</p>
+
+                <p>Thematically, Shell Shock examines the idea of spectacle as both an escape and a trap. The characters are driven by deeply personal ambitions—some noble, others petty—and their pursuit of recognition often leads to chaos. Beneath the surface, the story carries an undercurrent of power struggles that subtly mirror real-world dynamics, particularly those between major AI companies and their competing visions for the future. Much like the domestic and interpersonal dramas of the film, these power struggles play out on all scales—human and corporate—making the absurd personal conflicts of the characters feel eerily reflective of larger global tensions.</p>
+
+                <p>Adding another layer to this narrative is the fact that none of the actors in Shell Shock are real. Every performance is generated through advanced AI tools, with their dialogue facilitated by the very large language models (LLMs) from which their names are derived. For instance, Chet Gapetti nods to ChatGPT, Claudine III Anthropocinni evokes Claude AI, and G-Rock playfully references Grok. These layered references invite sharp-eyed viewers to spot connections and serve as commentary on the ways AI tools shape both the creative process and the culture surrounding them. Even Hinton, the polar bear's original trainer in the film, is a subtle nod to AI pioneer Geoffrey Hinton, adding another layer for those familiar with the history of AI development.</p>
+
+                <p>This technology has made possible the kinds of physiological embellishments and character designs that would have been nearly unthinkable for someone working outside the traditional filmmaking industry. What once required hours of prosthetics, elaborate costumes, or advanced CGI can now be refined through iteration until the look aligns with the director's vision. Importantly, these tools are not intended to displace the incredible talents of makeup artists, costume designers, and visual effects professionals—skills I deeply respect. Rather, they act as a supplemental means for individuals like myself, working without access to traditional resources or crews, to experiment and realize projects that would otherwise remain purely conceptual.</p>
+
+                <p>I am acutely aware of the ethical and economic concerns surrounding AI, and I approach this technology with a sense of responsibility. Were it not for these tools, I would not have dared to dream of creating something on this scale. My use of AI is not about replacing existing systems but about finding a place for new, collaborative processes in the creative ecosystem. These tools have opened up possibilities for me as an artist to participate in a world I admire from the outside, enabling me to bring to life visions that were previously out of reach.</p>
+
+                <p>Stylistically, Shell Shock draws from my fascination with faded grandeur and theatricality, placing these characters in a decaying mansion that becomes a stage for their ambitions, betrayals, and absurd pursuits. The collision of anachronistic elements—Victorian bathhouses, prosthetic beards, ice-skating polar bears—reflects the fractured psyches of its characters and their struggle to reconcile who they are with who they want to be.</p>
+
+                <p>At its heart, Shell Shock is about the absurdity and poignancy of ambition, the tensions of loyalty and rivalry, and the fragile connections that hold us together in a world that often celebrates spectacle over substance. By combining generative AI technologies with traditional storytelling instincts, my goal is to create a film that blurs boundaries—between reality and artifice, sincerity and satire, and tradition and innovation. My hope is that Shell Shock challenges viewers to reflect not only on the characters' absurd journeys but also on the ways in which ambition, rivalry, and creativity intersect in our own lives and industries.</p>
+            </div>
+        </section>
+
+        <img src="../images/projects/shell-shock/stills/shell-shock-10.png" alt="Scene from Shell Shock" class="large-image">
+
+        <section class="interview-section">
+            <h2>Behind the Scenes: Interview Sequence</h2>
+            <div class="interview-player">
+                <video controls>
+                    <source src="../images/projects/shell-shock/interviews/Interview sequence.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
