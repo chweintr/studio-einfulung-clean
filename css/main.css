@@ -345,20 +345,46 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Media Queries for Landing Page */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (orientation: portrait) {
     /* Landing page title */
     .landing-page h1 {
-        font-size: 2.5rem;
-        margin-top: 10vh;
+        font-size: 2.2rem;
+        margin-top: 8vh;
         padding: 0 1rem;
     }
 
     /* Hero image mobile adjustments */
     .hero-image img {
         content: url('../images/hero-image-mobile.png');
-        object-position: center 70%; /* This pushes the focus point down */
+        object-position: center 70%;
+    }
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+    /* Landing page title */
+    .landing-page h1 {
+        font-size: 2rem;
+        margin-top: 5vh;
+        padding: 0 1rem;
     }
 
+    /* Hero image adjustments */
+    .hero-image img {
+        object-position: center 60%;
+    }
+
+    /* Navigation buttons */
+    .site-nav {
+        padding: 0.5rem;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
     /* Navigation buttons */
     .site-nav {
         padding: 1rem;
