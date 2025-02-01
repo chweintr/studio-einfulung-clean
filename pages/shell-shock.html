@@ -28,6 +28,32 @@
             display: block;
         }
 
+        .inline-image {
+            width: 45%;
+            height: auto;
+            display: inline-block;
+            margin: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .inline-image.left {
+            float: left;
+            margin-right: 2rem;
+        }
+
+        .inline-image.right {
+            float: right;
+            margin-left: 2rem;
+        }
+
+        .interview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
         .float-right {
             float: right;
             margin-left: 2rem;
@@ -40,27 +66,6 @@
             margin-right: 2rem;
             margin-bottom: 1rem;
             max-width: 45%;
-        }
-
-        .interview-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .interview blockquote {
-            color: var(--dark-green);
-            font-style: italic;
-            margin: 1rem 0;
-            padding-left: 1rem;
-            border-left: 4px solid var(--orange);
-        }
-
-        .interview cite {
-            display: block;
-            color: var(--orange);
-            margin-top: 0.5rem;
         }
 
         .character-grid {
@@ -127,18 +132,6 @@
             display: block;
             margin: 2rem 0;
         }
-
-        .inline-image {
-            width: 50%;
-            height: auto;
-            display: block;
-            margin: 1rem 0;
-            float: right;
-        }
-
-        .inline-image.left {
-            float: left;
-        }
     </style>
 </head>
 <body class="project-detail">
@@ -160,69 +153,56 @@
             <p class="status">Currently in preproduction</p>
 
             <div class="quote">
-                "A darkly comedic tale of rivalry and ambition set in a world of competitive beard growing, where the line between human and facial hair becomes increasingly blurred."
-                <p class="quote-attribution">— Studio Einfühlung</p>
+                <blockquote>
+                    <p>"Shell Shock promises to be a delightfully unhinged exploration of authenticity in an increasingly enhanced world. We eagerly anticipate seeing how this surreal tale unfolds."</p>
+                    <cite>—— Hanya Escobedo, Independent Film Critic</cite>
+                </blockquote>
             </div>
+
+            <div class="quote">
+                <blockquote>
+                    <p>"A darkly comedic tale of rivalry and ambition set in a world of competitive beard growing, where the line between human and facial hair becomes increasingly blurred."</p>
+                    <cite>— Studio Einfühlung</cite>
+                </blockquote>
+            </div>
+
+            <p class="project-text">In a world where competitive facial hair is televised like Olympic sports, Shell Shock follows Chet Gapetti, a struggling strongman from a traveling sideshow whose life unraveled when his wife left him to perform with a polar bear named Efimovich. When Chet enters the National Beard and Moustache Championships with his natural approach, he finds himself pitted against G-Rock and his team sporting controversial prosthetic enhancements. Set against backdrops of a decaying mansion, surreal egg fights, and bathhouse synchronized swimming performances, this darkly comedic tale explores authenticity and ambition gone awry.</p>
 
             <img src="../images/projects/shell-shock/stills/shell-shock-5.png" alt="Scene from Shell Shock" class="large-image">
 
             <section class="project-summary">
-                <p>A surreal and darkly absurd story set in a decaying, opulent mansion where the lines between ambition, rivalry, and the ridiculous blur. Featuring characters that include a polar bear who ice skates, a failing sideshow strongman, a sharp-tongued mother-in-law, a nationally televised facial hair competition, bees, eggs, bathhouses, and beards—both real and prosthetic—Shell Shock unfolds as a kaleidoscope of ambition and absurdity.</p>
-
-                <p>In a world where facial hair competitions are televised like Olympic events and polar bears can triple axel, we follow Chet Gapetti, a strongman whose career is as wobbly as his knees during a deadlift. When his former ice-skating partner trades him in for a more graceful dance companion—a polar bear named Efimovich—Chet's world begins to crack like the thin ice beneath an overconfident skater.</p>
-
-                <p>Desperate to prove his worth, Chet enters the National Beard and Moustache Championships, despite his inability to grow more than a few patchy whiskers. His solution? A mysterious prosthetic beard that seems to have a mind of its own. As Chet navigates the cutthroat world of competitive facial hair, he must contend with his arch-rival G-Rock, his disapproving mother-in-law Mata ZuckerKlunk, and the increasingly strange behavior of his artificial beard.</p>
+                <p>In a world where competitive facial hair is televised like Olympic sports, Shell Shock follows Chet Gapetti, a struggling strongman from a traveling sideshow whose life unraveled when his wife left him to perform with a polar bear named Efimovich. When Chet enters the National Beard and Moustache Championships with his natural approach, he finds himself pitted against G-Rock and his team sporting controversial prosthetic enhancements. Set against backdrops of a decaying mansion, surreal egg fights, and bathhouse synchronized swimming performances, this darkly comedic tale explores authenticity and ambition gone awry.</p>
             </section>
 
             <img src="../images/projects/shell-shock/stills/shell-shock-1.png" alt="Scene from Shell Shock" class="large-image">
-
-            <section class="project-summary">
-                <p>With Shell Shock, I set out to explore the tension between ambition, identity, and the absurd in a world teetering between decaying traditions and theatrical spectacle. At its core, this is a story about fractured relationships, rivalries, and self-definition, all unfolding within a setting that is surreal and unsettlingly familiar.</p>
-            </section>
 
             <section class="director-statement">
                 <h2>Director's Statement</h2>
                 
                 <div class="statement-content">
-                    <p>With Shell Shock, I set out to explore the tension between ambition, identity, and the absurd in a world teetering between decaying traditions and theatrical spectacle. At its core, this is a story about fractured relationships, rivalries, and self-definition, all unfolding within a setting that is surreal and unsettlingly familiar.</p>
+                    <p>With Shell Shock, I set out to explore the tension between authenticity and spectacle in a world teetering between decaying traditions and theatrical excess. The characters—each teetering between tragic and comical—navigate personal and existential crises against a backdrop of faded grandeur and exaggerated performance.</p>
 
-                    <img src="../images/projects/shell-shock/stills/shell-shock-28.jpg" alt="Scene from Shell Shock" class="inline-image">
+                    <img src="../images/projects/shell-shock/stills/shell-shock-28.jpg" alt="Scene from Shell Shock" class="inline-image left">
+                    <p>The title, Shell Shock, carries multiple meanings. It nods to the dramatic egg battles that unfold within the film, but also hints at deeper fractures—the psychological toll of ambition and rivalry in our enhancement-obsessed world. The setting, a mix of decaying mansion interiors, professional ice rinks, and television studios, creates a landscape where the absurd and the authentic collide.</p>
 
-                    <p>The title, Shell Shock, carries multiple connotations. It nods to the dramatic and absurd egg battle that unfolds within the film, a central motif both literal and symbolic. Eggs, fragile yet enduring, serve as a metaphor for life, potential, and transformation. The title also hints at deeper emotional fractures, evoking the psychological toll of ambition and rivalry, particularly in the heightened world of sideshow circuits and televised competitions. The characters—many teetering between tragic and comical—find themselves navigating personal and existential crises against a backdrop of decayed grandeur and exaggerated spectacle.</p>
+                    <img src="../images/projects/shell-shock/stills/shell-shock-16.png" alt="Scene from Shell Shock" class="inline-image right">
+                    <p>The film's ensemble features Chet Gapetti (ChatGPT), a strongman using natural methods, pitted against G-Rock (Grok) and his enhanced team. His ex-wife Claudine III Anthropocinni (Anthropic's Claude 3) now performs with a polar bear named Efimovich (extra points if you can figure out this reference!), while his mother-in-law Mata ZuckerKlunk (Meta) schemes from the shadows. Seepdeeq (DeepSeek) maintains an air of mystery, while Jemini Manchin and their bear "Move 37" emerge as rival performers to Claudine's act. Tim Took, a former beard champion, polishes his remaining patches of facial hair while eternally promising "next year's revolutionary approach." The bumbling couple Alex & Suri (guess which AI assistants they're named after) provide well-meaning but catastrophically misunderstood help throughout.</p>
 
-                    <p>The film's ensemble cast is as eclectic as its themes. At the center is Chet Gapetti, a washed-up sideshow strongman whose dreams of glory lie not in feats of strength but in winning a nationally televised beard competition. His former wife, Claudine, now partners with a polar bear—a literal replacement for Chet—embodying both the absurdity and heartbreak of his fall from grace. G-Rock, a flamboyant and scheming rival, fuels the chaos, while Mata ZuckerKlunk, the caustic mother-in-law, sharpens the interpersonal tensions with her biting commentary. Together, they inhabit a world that is as much about performance as it is about survival.</p>
+                    <img src="../images/projects/shell-shock/stills/shell-shock-4.png" alt="Scene from Shell Shock" class="inline-image left">
+                    <p>Each character's dialogue emerges from direct collaboration with their namesake AI model - Chet's lines developed with ChatGPT, Claudine's with Claude, G-Rock's with Grok - creating a meta-layer where AI personalities help shape their fictional counterparts. Even the polar bear's original trainer, Hilton (a mysterious character who is never seen on camera), has vanished from the competition circuit, leaving only whispered legends of his beard-growing prowess. Though under Zodiac Muratti's guidance, Efimovich's routines have taken on an almost philosophical precision - a development that seems to particularly irritate Chet, who finds himself increasingly drawn to Jemini's side of the rink.</p>
 
-                    <img src="../images/projects/shell-shock/stills/shell-shock-16.png" alt="Scene from Shell Shock" class="inline-image left">
+                    <img src="../images/projects/shell-shock/stills/shell-shock-21.png" alt="Scene from Shell Shock" class="inline-image right">
+                    <p>The film uses its absurdist facade - beard competitions, ice-skating bears, and egg battles - to explore very real questions about enhancement, authenticity, and the nature of progress. What starts as a personal story of rivalry and redemption becomes a funhouse mirror reflecting broader technological and social dynamics. For those familiar with the current AI landscape, the film offers an additional layer of meaning beneath its surreal surface.</p>
 
-                    <p>Desperate to prove his worth, Chet enters the National Beard and Moustache Championships, despite his inability to grow more than a few patchy whiskers. His solution? A mysterious prosthetic beard that seems to have a mind of its own. As Chet navigates the cutthroat world of competitive facial hair, he must contend with his arch-rival G-Rock, his disapproving mother-in-law Mata ZuckerKlunk, and the increasingly strange behavior of his artificial beard.</p>
+                    <img src="../images/projects/shell-shock/stills/shell-shock-12.png" alt="Scene from Shell Shock" class="inline-image right">
+                    <p>Stylistically, Shell Shock inhabits a world where baroque excess meets calculated decay. The film's characters feature distinctive, exaggerated physiognomies - elongated necks, oversized ears, unconventional proportions - creating a heightened reality that remains grounded in human emotion. The mansion's interiors blend maximalist ornamentation with faded grandeur, while the competitive sequences employ a surrealist approach that evokes both vintage television spectacle and European art house tradition.</p>
 
-                    <img src="../images/projects/shell-shock/stills/shell-shock-4.png" alt="Scene from Shell Shock" class="inline-image">
-
-                    <p>Thematically, Shell Shock examines the idea of spectacle as both an escape and a trap. The characters are driven by deeply personal ambitions—some noble, others petty—and their pursuit of recognition often leads to chaos. Beneath the surface, the story carries an undercurrent of power struggles that subtly mirror real-world dynamics, particularly those between major AI companies and their competing visions for the future. Much like the domestic and interpersonal dramas of the film, these power struggles play out on all scales—human and corporate—making the absurd personal conflicts of the characters feel eerily reflective of larger global tensions.</p>
-
-                    <img src="../images/projects/shell-shock/stills/shell-shock-21.png" alt="Scene from Shell Shock" class="inline-image left">
-
-                    <p>Adding another layer to this narrative is the fact that none of the actors in Shell Shock are real. Every performance is generated through advanced AI tools, with their dialogue facilitated by the very large language models (LLMs) from which their names are derived. For instance, Chet Gapetti nods to ChatGPT, Claudine III Anthropocinni evokes Claude AI, and G-Rock playfully references Grok. These layered references invite sharp-eyed viewers to spot connections and serve as commentary on the ways AI tools shape both the creative process and the culture surrounding them. Even Hinton, the polar bear's original trainer in the film, is a subtle nod to AI pioneer Geoffrey Hinton, adding another layer for those familiar with the history of AI development.</p>
-
-                    <img src="../images/projects/shell-shock/stills/shell-shock-26.png" alt="Scene from Shell Shock" class="inline-image left">
-
-                    <p>This technology has made possible the kinds of physiological embellishments and character designs that would have been nearly unthinkable for someone working outside the traditional filmmaking industry. What once required hours of prosthetics, elaborate costumes, or advanced CGI can now be refined through iteration until the look aligns with the director's vision. Importantly, these tools are not intended to displace the incredible talents of makeup artists, costume designers, and visual effects professionals—skills I deeply respect. Rather, they act as a supplemental means for individuals like myself, working without access to traditional resources or crews, to experiment and realize projects that would otherwise remain purely conceptual.</p>
-
-                    <img src="../images/projects/shell-shock/stills/shell-shock-12.png" alt="Scene from Shell Shock" class="inline-image left">
-
-                    <p>I am acutely aware of the ethical and economic concerns surrounding AI, and I approach this technology with a sense of responsibility. Were it not for these tools, I would not have dared to dream of creating something on this scale. My use of AI is not about replacing existing systems but about finding a place for new, collaborative processes in the creative ecosystem. These tools have opened up possibilities for me as an artist to participate in a world I admire from the outside, enabling me to bring to life visions that were previously out of reach.</p>
-
-                    <img src="../images/projects/shell-shock/stills/shell-shock-22.png" alt="Scene from Shell Shock" class="inline-image">
-
-                    <p>Stylistically, Shell Shock draws from my fascination with faded grandeur and theatricality, placing these characters in a decaying mansion that becomes a stage for their ambitions, betrayals, and absurd pursuits. The collision of anachronistic elements—Victorian bathhouses, prosthetic beards, ice-skating polar bears—reflects the fractured psyches of its characters and their struggle to reconcile who they are with who they want to be.</p>
-
-                    <img src="../images/projects/shell-shock/stills/shell-shock-8.png" alt="Scene from Shell Shock" class="inline-image left">
-
-                    <p>At its heart, Shell Shock is about the absurdity and poignancy of ambition, the tensions of loyalty and rivalry, and the fragile connections that hold us together in a world that often celebrates spectacle over substance. By combining generative AI technologies with traditional storytelling instincts, my goal is to create a film that blurs boundaries—between reality and artifice, sincerity and satire, and tradition and innovation. My hope is that Shell Shock challenges viewers to reflect not only on the characters' absurd journeys but also on the ways in which ambition, rivalry, and creativity intersect in our own lives and industries.</p>
-
-                    <img src="../images/projects/shell-shock/stills/shell-shock-14.png" alt="Scene from Shell Shock" class="inline-image">
+                    <img src="../images/projects/shell-shock/stills/shell-shock-22.png" alt="Scene from Shell Shock" class="inline-image left">
+                    <p>At its heart, Shell Shock is about the absurdity and poignancy of ambition, the tensions between authenticity and enhancement, and the fragile connections that hold us together in a world that often celebrates spectacle over substance. Through its blend of surreal humor and pointed commentary, the film invites viewers to reflect not only on the characters' absurd journeys but also on the ways in which ambition, rivalry, and progress intersect in our own rapidly evolving world.</p>
                 </div>
             </section>
+
+            <img src="../images/projects/shell-shock/stills/shell-shock-10b.png" alt="Scene from Shell Shock" class="large-image">
 
             <h2>Characters</h2>
             <div class="character-grid">
@@ -264,6 +244,54 @@
                     </div>
                     <h3>Efimovich</h3>
                     <p>A mysterious polar bear with an uncanny grace on the ice.</p>
+                </div>
+
+                <div class="character">
+                    <div class="character-image">
+                        <img src="../images/projects/shell-shock/characters/Jemini Manchin.png" alt="Jemini Manchin">
+                    </div>
+                    <h3>Jemini Manchin</h3>
+                    <p>A perfectionistic ice skater partnered with an unusually disciplined bear.</p>
+                </div>
+
+                <div class="character">
+                    <div class="character-image">
+                        <img src="../images/projects/shell-shock/characters/Move 37.png" alt="Move 37">
+                    </div>
+                    <h3>Move 37</h3>
+                    <p>A meticulously trained but oddly distant skating bear.</p>
+                </div>
+
+                <div class="character">
+                    <div class="character-image">
+                        <img src="../images/projects/shell-shock/characters/Tim Took.png" alt="Tim Took">
+                    </div>
+                    <h3>Tim Took</h3>
+                    <p>A once-great beard champion forever promising "next year's revolution."</p>
+                </div>
+
+                <div class="character">
+                    <div class="character-image">
+                        <img src="../images/projects/shell-shock/characters/Alex & Suri.webp" alt="Alex & Suri">
+                    </div>
+                    <h3>Alex & Suri</h3>
+                    <p>A maddeningly well-intentioned malaprop-prone pair who consistently misinterpret every situation.</p>
+                </div>
+
+                <div class="character">
+                    <div class="character-image">
+                        <img src="../images/projects/shell-shock/characters/Seepdeeq.png" alt="Seepdeeq">
+                    </div>
+                    <h3>Seepdeeq</h3>
+                    <p>An enigmatic competitor from overseas with unconventional methods.</p>
+                </div>
+
+                <div class="character">
+                    <div class="character-image">
+                        <img src="../images/projects/shell-shock/characters/Zodiac Muratti.png" alt="Zodiac Muratti">
+                    </div>
+                    <h3>Zodiac Muratti</h3>
+                    <p>Efimovich's enigmatic trainer who coaches both bear and Claudine with unorthodox precision.</p>
                 </div>
             </div>
 

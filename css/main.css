@@ -498,6 +498,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .project-detail .statement-content p {
     margin-bottom: 1.5rem;
+    margin-right: 0;
 }
 
 .statement-image {
@@ -517,7 +518,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 45%;
     height: auto;
     margin: 1rem;
-    float: right;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
@@ -527,10 +527,15 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 2rem;
 }
 
-@media (max-width: 768px) {
-    .statement-image {
-        margin: 2rem 0;
-    }
+.inline-image.right {
+    float: right;
+    margin-left: 2rem;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .project-detail .quote {
