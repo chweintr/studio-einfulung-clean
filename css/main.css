@@ -199,6 +199,16 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
 }
 
+.landing-page .background-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 .hero-section {
     position: relative;
     min-height: 100vh;
@@ -336,11 +346,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Media Queries for Landing Page */
 @media screen and (max-width: 480px) {
-    .landing-page {
-        background-image: url('../images/hero-image-mobile.png');
+    .landing-page .background-image {
+        content: url('../images/hero-image-mobile.png');
     }
     
-    /* Move site title lower on phone */
     .landing-page .site-title {
         margin-top: 40vh;
     }
