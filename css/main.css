@@ -346,34 +346,55 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Media Queries for Landing Page */
 @media screen and (max-width: 480px) {
-    .landing-page .background-image {
+    /* Landing page mobile adjustments */
+    .hero-image img {
         content: url('../images/hero-image-mobile.png');
     }
-    
-    .landing-page .site-title {
-        margin-top: 40vh;
-    }
-}
 
-@media screen and (max-width: 768px) {
+    .site-title {
+        margin-top: 30vh;
+        font-size: 2rem;
+    }
+
+    /* Navigation adjustments */
+    .site-nav {
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
     /* Project page adjustments */
+    .project-detail .nav-links {
+        display: none;
+    }
+
     .project-content {
         padding: 1rem;
     }
 
     .quote {
-        margin: 2rem 0;
+        margin: 1.5rem 0;
         padding: 0 1rem;
     }
 
     .quote p {
         font-size: 1.2rem;
-        line-height: 1.6;
+        line-height: 1.4;
     }
-    
-    /* Hide navigation on project pages for smaller screens */
-    .project-detail .nav-links {
-        display: none;
+
+    /* Image adjustments */
+    .inline-image {
+        width: 100% !important;
+        float: none !important;
+        margin: 1rem 0 !important;
+    }
+
+    .large-image {
+        margin: 1rem 0;
     }
 }
 
