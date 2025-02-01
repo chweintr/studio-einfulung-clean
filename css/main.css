@@ -729,4 +729,43 @@ h1, h2, h3, h4, h5, h6 {
     .left-nav {
         margin-bottom: 1rem;
     }
+
+    /* Hide navigation on project pages */
+    .project-detail .nav-links {
+        display: none;
+    }
+
+    /* Adjust landing page for mobile */
+    .landing-page {
+        background-image: url('../images/hero-image-mobile.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+    /* Move site title lower on mobile landing page */
+    .landing-page .site-title {
+        margin-top: 40vh;
+    }
+
+    /* Project page adjustments */
+    .project-content {
+        padding: 1rem;
+    }
+
+    .quote {
+        margin: 2rem 0;
+        padding: 0 1rem;
+    }
+
+    .quote p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    /* Keep desktop hero image on larger screens */
+    @media (min-width: 769px) {
+        .landing-page {
+            background-image: url('../images/hero-image.jpg');
+        }
+    }
 }
