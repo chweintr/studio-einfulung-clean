@@ -8,11 +8,6 @@
 </head>
 <body class="landing-page">
     <nav class="site-nav">
-        <button class="hamburger-menu" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
         <div class="nav-links">
             <a href="pages/projects.html">PROJECTS</a>
             <a href="pages/about.html">ABOUT</a>
@@ -63,18 +58,11 @@
             }
         });
 
-        // Hamburger menu
-        const hamburger = document.querySelector('.hamburger-menu');
-        const navLinks = document.querySelector('.nav-links');
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navLinks.classList.toggle('active');
-        });
-
         // Close menu when clicking outside
         document.addEventListener('click', (e) => {
-            if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+            const hamburger = document.querySelector('.hamburger-menu');
+            const navLinks = document.querySelector('.nav-links');
+            if (hamburger && !hamburger.contains(e.target) && navLinks && !navLinks.contains(e.target)) {
                 hamburger.classList.remove('active');
                 navLinks.classList.remove('active');
             }
