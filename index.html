@@ -8,6 +8,11 @@
 </head>
 <body class="landing-page">
     <nav class="site-nav">
+        <button class="hamburger-menu" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <div class="nav-links">
             <a href="pages/projects.html">PROJECTS</a>
             <a href="pages/about.html">ABOUT</a>
@@ -34,14 +39,15 @@
     </main>
 
     <script>
+        // Parallax effect
         let lastScrollY = window.scrollY;
         let ticking = false;
 
         function updateParallax() {
             const heroImage = document.querySelector('.hero-image img');
             if (heroImage) {
-                const scrolled = window.scrollY;
-                heroImage.style.transform = `translateY(${scrolled * 0.5}px)`;
+                const translateY = lastScrollY * 0.5;
+                heroImage.style.transform = `translateY(${translateY}px)`;
             }
             ticking = false;
         }
@@ -54,6 +60,23 @@
                     ticking = false;
                 });
                 ticking = true;
+            }
+        });
+
+        // Hamburger menu
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
             }
         });
     </script>
