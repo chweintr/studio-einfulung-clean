@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIO EINFÜHLUNG</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="landing-page">
+    <nav class="site-nav">
+        <div class="nav-links">
+            <a href="pages/projects.html">PROJECTS</a>
+            <a href="pages/about.html">ABOUT</a>
+            <a href="mailto:studioeinfuhlung@gmail.com" class="contact-button">CONTACT</a>
+        </div>
+    </nav>
+
+    <main class="hero-section">
+        <div class="hero-content fade-in">
+            <h1>STUDIO EINFÜHLUNG</h1>
+        </div>
+
+        <div class="enter-container fade-in">
+            <a href="pages/projects.html" class="enter-button">ENTER</a>
+        </div>
+
+        <div class="hero-image">
+            <img 
+                src="images/hero-image.jpg" 
+                alt="Woman in flowing green dress with orange shoes" 
+                class="background-image"
+            >
+        </div>
+    </main>
+
+    <script>
+        let lastScrollY = window.scrollY;
+        let ticking = false;
+
+        function updateParallax() {
+            const heroImage = document.querySelector('.hero-image img');
+            if (heroImage) {
+                const scrolled = window.scrollY;
+                heroImage.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', () => {
+            lastScrollY = window.scrollY;
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    updateParallax();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+    </script>
+</body>
+</html>
