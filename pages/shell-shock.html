@@ -132,6 +132,34 @@
             display: block;
             margin: 2rem 0;
         }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            .project-content {
+                padding: 1rem;
+            }
+
+            .inline-image {
+                width: 100%;
+                float: none;
+                margin: 1rem 0;
+            }
+
+            .inline-image.left,
+            .inline-image.right {
+                float: none;
+                margin: 1rem 0;
+            }
+
+            .character-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+            }
+
+            .interview-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body class="project-detail">
@@ -154,14 +182,14 @@
 
             <div class="quote">
                 <blockquote>
-                    <p>"Shell Shock promises to be a delightfully unhinged exploration of authenticity in an increasingly enhanced world. We eagerly anticipate seeing how this surreal tale unfolds."</p>
+                    <p>"Where competitive beard growing meets ice-skating bears - a darkly comedic exploration of authenticity in an increasingly enhanced world."</p>
                     <cite>—— Hanya Escobedo, Independent Film Critic</cite>
                 </blockquote>
             </div>
 
             <div class="quote">
                 <blockquote>
-                    <p>"A darkly comedic tale of rivalry and ambition set in a world of competitive beard growing, where the line between human and facial hair becomes increasingly blurred."</p>
+                    <p>"Where competitive beard growing meets ice-skating bears - a darkly comedic exploration of authenticity in an increasingly enhanced world."</p>
                     <cite>— Studio Einfühlung</cite>
                 </blockquote>
             </div>
