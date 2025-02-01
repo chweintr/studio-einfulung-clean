@@ -193,8 +193,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Landing Page Specific Styles */
-.landing-page .site-nav {
-    justify-content: flex-end;
+.landing-page {
+    background-image: url('../images/hero-image.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-section {
@@ -333,21 +335,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Media Queries for Landing Page */
-@media (orientation: portrait) {
-    .hero-content h1 {
-        font-size: 2.8rem;
+@media screen and (max-width: 480px) {
+    .landing-page {
+        background-image: url('../images/hero-image-mobile.png');
     }
     
-    .enter-button {
-        font-size: 1rem;
-        padding: 0.6em 1.5em;
+    /* Move site title lower on phone */
+    .landing-page .site-title {
+        margin-top: 40vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Project page adjustments */
+    .project-content {
+        padding: 1rem;
     }
 
-    .enter-container {
-        right: 50%;
-        top: auto;
-        bottom: 15vh;
-        transform: translateX(50%);
+    .quote {
+        margin: 2rem 0;
+        padding: 0 1rem;
+    }
+
+    .quote p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+    
+    /* Hide navigation on project pages for smaller screens */
+    .project-detail .nav-links {
+        display: none;
     }
 }
 
@@ -767,40 +784,5 @@ h1, h2, h3, h4, h5, h6 {
         .landing-page {
             background-image: url('../images/hero-image.jpg');
         }
-    }
-}
-
-/* Mobile Responsive Styles */
-@media (max-width: 768px) {
-    /* Hide navigation on project pages */
-    .project-detail .nav-links {
-        display: none;
-    }
-
-    /* Adjust landing page for mobile */
-    .landing-page {
-        background-image: url('../images/hero-image-mobile.png');
-        background-position: center;
-        background-size: cover;
-    }
-
-    /* Move site title lower on mobile landing page */
-    .landing-page .site-title {
-        margin-top: 40vh;
-    }
-
-    /* Project page adjustments */
-    .project-content {
-        padding: 1rem;
-    }
-
-    .quote {
-        margin: 2rem 0;
-        padding: 0 1rem;
-    }
-
-    .quote p {
-        font-size: 1.2rem;
-        line-height: 1.6;
     }
 }
