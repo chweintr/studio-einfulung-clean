@@ -51,6 +51,10 @@ body {
     margin-left: auto;
 }
 
+.project-detail .nav-links {
+    display: none;
+}
+
 .back-link {
     margin-left: 2rem;
 }
